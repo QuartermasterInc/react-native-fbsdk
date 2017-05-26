@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         minSdkVersion 16
-        targetSdkVersion 23
+        targetSdkVersion 22
         versionCode 1
         versionName "1.0"
     }
@@ -19,9 +19,9 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:23.1.0'
-    compile 'com.facebook.react:react-native:+' // support react-native-v0.22-rc+
-    compile('com.facebook.android:facebook-android-sdk:4.+')
+    compile "com.android.support:appcompat-v7:23.0.1"
+    compile "com.facebook.react:react-native:0.39.2"
+    compile('com.facebook.android:facebook-android-sdk:4.22.0')
 }
